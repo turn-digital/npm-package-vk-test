@@ -1,0 +1,27 @@
+@use '@carbon/type';
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 14px;
+  background-color: #e57201;
+}
+
+.container {
+  position: relative;
+}
+
+.avatar-text {
+  @include type.type-style('heading-01');
+  color: #161616;
+  position: absolute;
+  left: 45px;
+  top: -3px;
+}

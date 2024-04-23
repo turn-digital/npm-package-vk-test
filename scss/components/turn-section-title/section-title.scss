@@ -1,0 +1,19 @@
+@use '@carbon/type';
+
+.section-title {
+  display: flex;
+  align-items: center;
+  height: 24px;
+  &__title {
+    @include type.type-style('heading-02');
+  }
+  &__tooltip {
+    margin-left: 8px;
+    margin-top: 4px;
+  }
+}
+
+.underline {
+  border-top: 2px solid #e57201;
+  width: 21px;
+}

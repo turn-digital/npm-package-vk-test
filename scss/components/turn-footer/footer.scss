@@ -1,0 +1,60 @@
+@use '@carbon/type';
+
+// @include type.type-style('heading-01');
+
+.footer {
+  background-color: #012169;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 6px 0;
+
+  &__section {
+    @include type.type-style('body-01');
+    span {
+      @include type.type-style('heading-01');
+    }
+    &--divider {
+      border-left: 1px solid #f4f6f9;
+    }
+  }
+
+  &--mobile-title {
+    display: none;
+  }
+  &--mobile-info {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1056px) {
+  .footer {
+    text-align: left;
+    gap: 21px;
+    padding: 20px 0;
+    @include type.type-style('body-compact-01');
+    line-height: 18px;
+
+    &__section {
+      span {
+        @include type.type-style('heading-compact-01');
+        display: block;
+      }
+      &--divider {
+        border-left: none;
+      }
+    }
+
+    &--mobile-title {
+      @include type.type-style('heading-02');
+      display: block;
+    }
+    &--mobile-info {
+      @include type.type-style('legal-01');
+      display: block;
+      span {
+        display: block;
+      }
+    }
+  }
+}

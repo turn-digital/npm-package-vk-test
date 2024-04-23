@@ -1,0 +1,111 @@
+@use '@carbon/styles/scss/spacing' as *;
+.item-padding-container {
+  &__vertical {
+    &--01 {
+      padding-top: $spacing-01;
+      padding-bottom: $spacing-01;
+    }
+    &--02 {
+      padding-top: $spacing-02;
+      padding-bottom: $spacing-02;
+    }
+    &--03 {
+      padding-top: $spacing-03;
+      padding-bottom: $spacing-03;
+    }
+    &--04 {
+      padding-top: $spacing-04;
+      padding-bottom: $spacing-04;
+    }
+    &--05 {
+      padding-top: $spacing-05;
+      padding-bottom: $spacing-05;
+    }
+    &--06 {
+      padding-top: $spacing-06;
+      padding-bottom: $spacing-06;
+    }
+    &--07 {
+      padding-top: $spacing-07;
+      padding-bottom: $spacing-07;
+    }
+    &--08 {
+      padding-top: $spacing-08;
+      padding-bottom: $spacing-08;
+    }
+    &--09 {
+      padding-top: $spacing-09;
+      padding-bottom: $spacing-09;
+    }
+    &--10 {
+      padding-top: $spacing-10;
+      padding-bottom: $spacing-10;
+    }
+    &--11 {
+      padding-top: $spacing-11;
+      padding-bottom: $spacing-11;
+    }
+    &--12 {
+      padding-top: $spacing-12;
+      padding-bottom: $spacing-12;
+    }
+    &--13 {
+      padding-top: $spacing-13;
+      padding-bottom: $spacing-13;
+    }
+  }
+  &__horizontal {
+    &--01 {
+      padding-right: $spacing-01;
+      padding-left: $spacing-01;
+    }
+    &--02 {
+      padding-right: $spacing-02;
+      padding-left: $spacing-02;
+    }
+    &--03 {
+      padding-right: $spacing-03;
+      padding-left: $spacing-03;
+    }
+    &--04 {
+      padding-right: $spacing-04;
+      padding-left: $spacing-04;
+    }
+    &--05 {
+      padding-right: $spacing-05;
+      padding-left: $spacing-05;
+    }
+    &--06 {
+      padding-right: $spacing-06;
+      padding-left: $spacing-06;
+    }
+    &--07 {
+      padding-right: $spacing-07;
+      padding-left: $spacing-07;
+    }
+    &--08 {
+      padding-right: $spacing-08;
+      padding-left: $spacing-08;
+    }
+    &--09 {
+      padding-right: $spacing-09;
+      padding-left: $spacing-09;
+    }
+    &--10 {
+      padding-right: $spacing-10;
+      padding-left: $spacing-10;
+    }
+    &--11 {
+      padding-right: $spacing-11;
+      padding-left: $spacing-11;
+    }
+    &--12 {
+      padding-right: $spacing-12;
+      padding-left: $spacing-12;
+    }
+    &--13 {
+      padding-right: $spacing-13;
+      padding-left: $spacing-13;
+    }
+  }
+}

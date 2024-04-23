@@ -1,0 +1,152 @@
+//
+// Copyright IBM Corp. 2020, 2023
+//
+// This source code is licensed under the Apache-2.0 license found in the
+// LICENSE file in the root directory of this source tree.
+//
+
+@use '@carbon/styles/scss/config' as *;
+@use '@carbon/styles/scss/breakpoint' as *;
+@use '@carbon/styles/scss/spacing' as *;
+@use '@carbon/styles/scss/components/ui-shell/functions';
+
+/* stylelint-disable selector-type-no-unknown */
+#{$prefix}-header ~ #{$prefix}-side-nav {
+  margin-top: $spacing-09;
+  height: calc(100% - $spacing-09);
+}
+
+.#{$prefix}-ce-demo-devenv--container {
+  // Ref: https://github.com/carbon-design-system/carbon/blob/v10.10.0/packages/components/src/components/ui-shell/_side-nav.scss#L82
+  will-change: margin-left;
+  transition: margin-left 0.11s cubic-bezier(0.2, 0, 1, 0.9);
+
+  @include breakpoint('lg') {
+    margin-left: 16rem;
+  }
+}
+
+.header-nav-menu-container {
+  height: 100%;
+}
+
+.avatar_container {
+  padding: 24px 12px;
+  display: flex;
+  align-items: center;
+}
+
+.popover {
+  display: flex;
+  &__button {
+    width: 48px;
+    height: 48px;
+    &--icon {
+      position: absolute;
+      top: 12px;
+      left: 14px;
+    }
+  }
+  &__person {
+    display: flex;
+    align-items: center;
+    padding: 0px 16px;
+    p {
+      padding: 0;
+    }
+    span {
+      margin-left: 16px;
+    }
+  }
+  &__logout {
+    position: absolute;
+    right: 16px;
+  }
+}
+
+.page-content {
+  box-sizing: border-box;
+  padding: 0px;
+  border: 0px;
+  margin: 0px;
+  top: 48px;
+  left: 256px;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  background-color: red;
+}
+@media screen and (max-width: 1055px) {
+  .page-content {
+    left: 0;
+  }
+}
+
+// :host(cds-header-nav-item) a.cds--header__menu-item,
+// :host(cds-header-menu) a.cds--header__menu-item {
+//   box-sizing: border-box;
+//   background-color: red;
+// }
+
+:host(#{$prefix}-header-menu-item) {
+  &:hover {
+    background-color: red !important;
+  }
+}
+
+// #{$prefix}-header {
+//   background-color: red;
+//   .cds--side-nav__icon > svg {
+//     block-size: 1rem;
+//     fill: var(--cds-icon-secondary, #525252);
+//     inline-size: 1rem;
+//   }
+
+//   cds-header-menu-button {
+//     background-color: red;
+//     --cds-icon-primary: white;
+//     --cds-icon-secondary: white;
+//     --cds-layer: red;
+//   }
+
+//   .cds--header__global {
+//     background-color: red;
+//     --cds-icon-primary: white;
+//     --cds-icon-secondary: white;
+//     --cds-layer: red;
+//   }
+// }
+
+// :host(#{$prefix}-header-nav-item),
+// :host(#{$prefix}-header-menu) {
+//   a.#{$prefix}--header__menu-item {
+//     box-sizing: border-box;
+//     background-color: purple;
+//   }
+// }
+
+// cds-kase-header::slotted(headercontent) {
+//   background-color: red;
+// }
+
+// #headercontent {
+//   background-color: red;
+// }
+
+// cds-header-name::part(link) {
+//   color: white;
+//   background-color: red;
+// }
+
+// //work if header nav inside the kase-header
+
+// cds-header-nav-item::part(link) {
+//   background-color: red !important;
+//   color: white;
+// }
+// cds-header-nav-item::part(link):hover {
+//   background-color: #092f86 !important;
+// }
